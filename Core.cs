@@ -13,9 +13,7 @@ namespace Xm_Core
     {
         public static string HttpGet(string url)
         {
-            Encoding encoding = Encoding.UTF8;
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            request.Method = "GET";
             request.Accept = "text/html, application/xhtml+xml, */*";
             request.ContentType = "application/json";
 
