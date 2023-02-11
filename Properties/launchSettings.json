@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Xm_Core": {
+      "commandName": "Project"
+    },
+    "配置文件 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Steve\\Source\\Repos\\Xm_Core\\Xm_ConsoleLauncher\\bin\\Debug\\net6.0\\Xm_ConsoleLauncher.exe"
+    }
+  }
+}

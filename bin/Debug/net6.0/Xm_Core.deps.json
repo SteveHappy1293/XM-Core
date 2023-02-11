@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Xm_Core/1.0.0": {
+        "dependencies": {
+          "LitJson": "0.18.0"
+        },
+        "runtime": {
+          "Xm_Core.dll": {}
+        }
+      },
+      "LitJson/0.18.0": {
+        "runtime": {
+          "lib/net6.0/LitJSON.dll": {
+            "assemblyVersion": "0.18.0.0",
+            "fileVersion": "0.18.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Xm_Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LitJson/0.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zVK/1iUURxvEZH1eiviFpS8Qbh1fZe926ie18vhHuisVYcNbdVjgG85X8BsGt7WBU5Ka3gZvaQXRX6EsoD2hrw==",
+      "path": "litjson/0.18.0",
+      "hashPath": "litjson.0.18.0.nupkg.sha512"
+    }
+  }
+}

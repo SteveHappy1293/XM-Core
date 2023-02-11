@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NG4tIttbuOXW3jkOvtmWnvzPS2LRnnPOAqE9v2WXKsXtG/4HcTNPAMP58dR1zAPG29+lAv3hVu/n5KBhI3H5fA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Steve\\Source\\Repos\\Xm_Core\\Xm_Core\\Xm_Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Steve\\.nuget\\packages\\litjson\\0.18.0\\litjson.0.18.0.nupkg.sha512"
+  ],
+  "logs": []
+}

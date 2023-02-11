@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "LitJson/0.18.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/LitJSON.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/LitJSON.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LitJson/0.18.0": {
+      "sha512": "zVK/1iUURxvEZH1eiviFpS8Qbh1fZe926ie18vhHuisVYcNbdVjgG85X8BsGt7WBU5Ka3gZvaQXRX6EsoD2hrw==",
+      "type": "package",
+      "path": "litjson/0.18.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/LitJSON.dll",
+        "lib/net35/LitJSON.dll",
+        "lib/net40/LitJSON.dll",
+        "lib/net45/LitJSON.dll",
+        "lib/net6.0/LitJSON.dll",
+        "lib/netstandard1.5/LitJSON.dll",
+        "lib/netstandard2.0/LitJSON.dll",
+        "lib/netstandard2.1/LitJSON.dll",
+        "litjson.0.18.0.nupkg.sha512",
+        "litjson.nuspec",
+        "litjson.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "LitJson >= 0.18.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Steve\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Steve\\Source\\Repos\\Xm_Core\\Xm_Core\\Xm_Core.csproj",
+      "projectName": "Xm_Core",
+      "projectPath": "C:\\Users\\Steve\\Source\\Repos\\Xm_Core\\Xm_Core\\Xm_Core.csproj",
+      "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Steve\\Source\\Repos\\Xm_Core\\Xm_Core\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "LitJson": {
+            "target": "Package",
+            "version": "[0.18.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
