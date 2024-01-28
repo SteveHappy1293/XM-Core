@@ -130,10 +130,7 @@ namespace Xm_Core
     {
         public string launchgame(string java, string mcfolder, string version, string username)
         {
-            var Token = "27c34451aaa74f4d8bb8601bcb4fc218";
-            if (java == "Steve" && mcfolder == "is" && version == "so" && username == "cute")
-                return "Egg";
-            //触发彩蛋
+            var Token = "*****************************";//Token
             else if (!Directory.Exists(mcfolder) || !File.Exists(java))
               return "Java或者Minecraft文件夹不存在，请检查目录";
             else if (username == null || version == null)
