@@ -143,15 +143,15 @@ namespace Xm_Core
                 //所有都是齐全的，开始启动游戏
                 var json = $@"{mcfolder}\versions\{version}\{version}.json";
                 var jar = $@"{mcfolder}\versions\{version}\{version}.jar";
-                var Bootup = "";
+                StringBuilder Bootup = new StringBuilder();
                 var cplist = new List<string>();
                 var navilist = new List<string>();
-                Bootup += $"\"{java}\" -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Dos.name=Windows10 -Dos.version=10.0 -Xss1M ";
+                Bootup.append($"\"{java}\" -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Dos.name=Windows10 -Dos.version=10.0 -Xss1M ");
                 if (!Directory.Exists($@"{mcfolder}\versions\{version}\natives\"))
                     Directory.CreateDirectory($@"{mcfolder}\versions\{version}\natives\");
-                Bootup += "-Djava.library.path=" + $@"{mcfolder}\versions\{version}\natives\ ";
-                Bootup += "-Dminecraft.launcher.brand=Launcher -Dminecraft.launcher.version=1.0 ";
-                Bootup += "-cp ";
+                Bootup.append("-Djava.library.path=" + $@"{mcfolder}\versions\{version}\natives\ ");
+                Bootup.append("-Dminecraft.launcher.brand=Launcher -Dminecraft.launcher.version=1.0 ");
+                Bootup.append("-cp ");
                 //这里给cplist赋值
                 cplist.Add(jar);
                 JsonData cpdata = JsonMapper.ToObject(File.ReadAllText(json));
