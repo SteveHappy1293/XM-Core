@@ -167,16 +167,16 @@ namespace Xm_Core
                 //遍历
                 foreach (var cp in cplist)
                 {
-                    Bootup += cp + ";";
+                    Bootup.append(cp + ";");
                 }
                 //解压必要的DLL
                 foreach(var nav in navilist)
                 {
                     Process.Start("cmd.exe", "/c start cmd.exe /c 7z.exe x " + nav + " -y -o" + $@"{mcfolder}\versions\{version}\natives");
                 }
-                Bootup += "-Xmx2G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M net.minecraft.client.main.Main ";
-                Bootup += $@"--username {username} --version {version} --gameDir {mcfolder} --accessToken {Token} --assetsDir {mcfolder}\assets --userType mojang --versionType Core";
-                return Bootup;
+                Bootup.append("-Xmx2G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M net.minecraft.client.main.Main ");
+                Bootup.append($@"--username {username} --version {version} --gameDir {mcfolder} --accessToken {Token} --assetsDir {mcfolder}\assets --userType mojang --versionType Core");
+                return Bootup.ToString();
             }
         }
     }
